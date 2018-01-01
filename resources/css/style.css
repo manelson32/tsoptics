@@ -1,0 +1,40 @@
+.sitebox {
+  width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.4rem;
+
+}
+
+.banner {
+  height: 31rem;
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+footer {
+  background-color: azure;
+  padding: 4rem 2rem;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
