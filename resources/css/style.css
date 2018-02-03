@@ -12,6 +12,9 @@ div {
 .flex {
   display: flex;
 }
+.mobile {
+  display: none;
+}
 html {
   font-size: 18px;
 }
@@ -56,7 +59,7 @@ header li {
 .banner {
   height: 31rem;
   background-image: url("../images/glasses-bg.png");
-  background-position: center;
+  background-position: 10%;
   background-size: cover;
 }
 .byline {
@@ -79,6 +82,7 @@ header li {
   }
   .banner {
     height: 22rem;
+    background-position: 20%;
   }
   .byline {
     top: 6.75rem;
@@ -90,17 +94,43 @@ header li {
     font-size: 1.33rem;
   }
 }
+@media only screen and (max-width: 640px) {
+  .logo p, .bigscreen {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .byline {
+    top: 8rem;
+    left: auto;
+    text-align: center;
+    right: auto;
+    background-color: white;
+    padding: 1rem 0;
 
+  }
+  .byline span {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
 /* Services Styles */
 
 .services {
   justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
 .exams, .fittings, .delivery {
   height: 8rem;
   width: 5rem;
-  margin: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +148,21 @@ header li {
 .caption {
   text-align: center;
 }
+@media only screen and (max-width: 640px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    /*margin-top: 3.77rem;
+    margin-bottom: 3.77rem;*/
+  }
+  .exams, .fittings, .delivery {
+    padding: 0.77rem 0;
+  }
+  .caption {
+    font-size: 0.77rem;
+  }
 
+}
 .exams {/*
   width: 3.5rem;*/
 }
@@ -166,6 +210,28 @@ header li {
 .information p {
   padding-top: 1rem;
 }
+@media only screen and (max-width: 640px) {
+  .information {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .philosophy, .appointments {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .information span {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  .information p {
+    font-size: 0.77rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+}
 
 /*  Footer Styles */
 
@@ -182,5 +248,13 @@ footer img {
 @media only screen and (max-width: 960px) {
   footer {
     padding: 4rem 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  footer img {
+    margin: 0 auto;
+  }
+  footer div {
+    display: none;
   }
 }
