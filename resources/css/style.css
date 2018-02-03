@@ -19,7 +19,11 @@ body {
   font-family: Helvetica, sans-serif;
   line-height: 1.4rem;
 }
-
+@media only screen and (max-width: 960px) {
+  .sitebox {
+    width: 100%;
+  }
+}
 
 /* Banner and Header Styles*/
 
@@ -68,6 +72,23 @@ header li {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
+}
+@media only screen and (max-width: 960px) {
+  header {
+    position: static;
+  }
+  .banner {
+    height: 22rem;
+  }
+  .byline {
+    top: 6.75rem;
+    left: auto;
+    right: 2rem;
+  }
+  .byline span {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
 }
 
 /* Services Styles */
@@ -157,4 +178,9 @@ footer img {
   height: 1.5rem;
   margin-right: 1rem;
   margin-left: 2rem;
+}
+@media only screen and (max-width: 960px) {
+  footer {
+    padding: 4rem 0;
+  }
 }
