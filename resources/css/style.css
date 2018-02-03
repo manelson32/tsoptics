@@ -74,36 +74,48 @@ header li {
   justify-content: center;
 }
 
-.service {
+.exams, .fittings, .delivery {
   height: 8rem;
   width: 5rem;
   margin: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.service .image-container {
-
+.exams img, .fittings img, .delivery img {
+  display: block;
+  height: auto;
 }
-
-.exams {
+.exams img {
   width: 3.5rem;
 }
-
-.fittings {
+.fittings img, .delivery img {
   width: 5rem;
 }
-
-.delivery {
-  width: 5rem;
+.caption {
+  text-align: center;
 }
 
-.image-container {
-  margin: auto;
+.exams {/*
+  width: 3.5rem;*/
 }
 
-.image-container img {
+.fittings {/*
+  width: 5rem;*/
+}
+
+.delivery {/*
+  width: 5rem;*/
+}
+
+.image-container {/*
+  margin: auto;*/
+}
+
+.image-container img {/*
   display: block;
   margin: auto;
-  width: 100%;
+  width: 100%;*/
 }
 
 /*  Footer Styles */
